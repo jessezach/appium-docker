@@ -37,4 +37,4 @@ Enable parallel execution of mobile tests using appium docker.
 docker run -d -p 4723:4723 -t -i --device=/dev/bus/usb/001/112 -v /home/user/config.json:/root/config.json --name app jessezach/appium
 
 Create multiple nodes and attach to the hub. Ensure that you change the appium port.
-To dynamically attach an existing node to another hub, stop container and modify the config.json with the new hub port and docker start <container-id>
+To dynamically attach an existing node to another hub, stop container `docker stop <container-id>` and modify the config.json with the new hub port and then run `docker start <container-id>`
