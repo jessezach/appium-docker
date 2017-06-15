@@ -3,9 +3,9 @@ Docker image for appium
 
 Enable parallel execution of mobile tests using appium docker.
 - Ensure you have docker installed and daemon running.
-- Pull the image. docker pull jessezach/appium:latest
-- Pull selenium hub image. docker pull selenium/hub
-- Create a hub container docker run -d -p 5700:4444 --name selenium-hub selenium/hub
+- Pull the image. docker pull `jessezach/appium:latest`
+- Pull selenium hub image. `docker pull selenium/hub`
+- Create a hub container `docker run -d -p 5700:4444 --name selenium-hub selenium/hub`
 - Create a config.json file containing the node config including hub url and port. Example:
 `{
 "capabilities": [
